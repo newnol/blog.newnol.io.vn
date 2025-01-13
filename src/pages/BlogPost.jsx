@@ -76,10 +76,7 @@ export default function BlogPost() {
 
         <div className="prose prose-invert prose-indigo max-w-none">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {post.content},
-            <div>
-              <a href="1"> hello </a>
-            </div>
+            {post.content}
           </ReactMarkdown>
         </div>
       </div>
