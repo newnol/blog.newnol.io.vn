@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "getting-started-with-react-and-vite",
+      "title": "Getting Started with React and Vite",
+      "excerpt": "Learn how to set up a modern React development environment using Vite...",
+      "date": "2023-12-20",
+      "image": "https://picsum.photos/800/400?random=1",
+      "author": {
+        "name": "John Doe",
+        "role": "Senior Developer",
+        "avatar": "https://avatars.githubusercontent.com/u/88440500?v=4"
+      }
+    },
+    {
+      "id": 2,
+      "slug": "mastering-tailwind-css",
+      "title": "Mastering Tailwind CSS",
+      "excerpt": "Discover the power of utility-first CSS with Tailwind...",
+      "date": "2023-12-19",
+      "image": "https://picsum.photos/800/400?random=2",
+      "author": {
+        "name": "Newnol Clolab",
+        "role": "UI Designer",
+        "avatar": "https://avatars.githubusercontent.com/u/88440500?v=4"
+      }
+    }
+  ]
+}
