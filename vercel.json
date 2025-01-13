@@ -1,5 +1,7 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ]
-  }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" },
+    { "source": "/data/posts/:slug", "destination": "/data/posts/:slug" }
+  ],
+  "public": true
+}
