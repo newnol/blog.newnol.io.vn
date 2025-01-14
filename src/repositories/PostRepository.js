@@ -1,4 +1,4 @@
-import metadata from '../data/posts/metadata.json';
+const metadata = await fetch('/data/posts/metadata.json').then(res => res.json());
 
 class PostRepository {
   async getAllPosts() {
@@ -10,7 +10,7 @@ class PostRepository {
     if (!post) return null;
 
     try {
-      const response = await fetch(`/src/data/posts/${slug}.md`);
+      const response = await fetch(`/data/posts/${slug}.md`);
       const content = await response.text();
       return { ...post, content };
     } catch (error) {

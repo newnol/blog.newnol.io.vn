@@ -55,10 +55,6 @@ export default function BlogPost() {
         alt={post.title} 
         className="w-full h-96 object-cover rounded-lg mb-8"
       />
-      <div>
-        <a href="123">asdasdasd</a>
-      </div>
-      
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         
