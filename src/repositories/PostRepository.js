@@ -1,12 +1,15 @@
-const metadata = await fetch('/data/posts/metadata.json').then(res => res.json());
+
 
 class PostRepository {
+  
   async getAllPosts() {
+    const metadata = await fetch('/data/posts/metadata.json').then(res => res.json());
     return metadata.posts;
   }
 
   async getPostBySlug(slug) {
-    const post = metadata.posts.find(p => p.slug === slug);
+    const posts = await this.getAllPosts();  // Chờ dữ liệu hoàn tất
+    const post = posts.find(p => p.slug === slug);
     if (!post) return null;
 
     try {
